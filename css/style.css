@@ -9,9 +9,14 @@ a img{
   width: 30px;
 }
 
-h4{
+h1{
   margin-bottom: 0px;
 }
+
+h4{
+  color: rgb(97, 97, 97);
+}
+
 h6{
   color: rgb(46, 53, 90);
 }
