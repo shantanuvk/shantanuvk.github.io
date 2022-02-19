@@ -22,9 +22,9 @@
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/skeleton.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/skeleton.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,47 +32,29 @@
   </head>
 
   <body>
-    <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <div class="container hero">
-      <div class="row flex">
-        <div class="one-half column" style="margin-top: 15%">
-          <h4 id="job-title">Advocate</h4>
+      <div class="row">
+        <div class="two-third column" style="margin-top: 15%">
+          <h4>Advocate</h4>
           <h1>Shantanu Kadam</h1>
           <p>
-            Detail-Oriented Lawyer with over 4 years of experience working in corporate law. Specialized in corporate taxes and financial planning, with deep knowledge of evolving government regulations. Highly competent in successful negotiations of substantial corporate contracts. 
-            <br>
-          L.L.B in Business Administration | Johns Hopkins University
+            <h6 onclick="copyToMyClipboard('+91 7718007891')">
+              <img src="https://img.icons8.com/ios/50/000000/apple-phone.png"/>
+              +91 7718007891</h6>      
+            <h6 onclick="copyToMyClipboard('shantanu.kadam@gmail.com')">
+              <img src="https://img.icons8.com/ios/96/000000/mail.png"/>
+              shantanu.kadam@gmail.com</h6> 
+            <a href="https://goo.gl/maps/x1XukCNMtUzX9Wwj7" target="_blank" >
+              <h6>
+                <img src="https://img.icons8.com/ios/50/000000/map-editing.png"/>11/ Sarvamangal society, College Lane, Dadar(West) Mumbai - 400 028</h6>
+            </a>     
           </p>
-
-          <ul>
-            <li>Graduated Summa Cum Laude in 2017</li>
-            <li>President of the Environmental Law Society 2015-2017</li>
-          </ul>
-          
         </div>
       </div>
-      <img
-        id="profilepic"
-        src="images/profilepic.png"
-        alt="Shantanu Kadam Profile Picture"
-      />
     </div>
 
-    <div class="banner">
-      <button class="nobg" onclick="copyToMyClipboard('+91 7718007891');">
-        <h6>+91 7718007891</h6>
-      </button>
-      <button class="nobg" onclick="copyToMyClipboard('shantanu.kadam12@gmail.com');">
-        <h6>shantanu.kadam@gmail.com</h6>
-      </button>
-       <button class="nobg" onclick="copyToMyClipboard('11/ Sarvamangal society, College Lane, Dadar(West)');">
-        <h6>11/ Sarvamangal society, College Lane, Dadar(W)</h6>
-      </button>
-    </div>
-
-    <hr>
+    <hr />
 
     <div class="container form-wrapper">
       <form
@@ -121,7 +103,7 @@
           placeholder="Hi Shantanu …"
           id="exampleMessage"
           required
-        ></textarea>
+        >Hi Shantanu, </textarea>
         <label class="example-send-yourself-copy">
           <input type="checkbox" />
           <span class="label-body">Send a copy to yourself</span>
@@ -135,25 +117,15 @@
       </form>
     </div>
 
-    <section>
-      <div class="skewed"></div>
-    </section>
-
-    <footer>
-      
-    </footer>
-
     <script type="text/javascript">
-      console.log("%cShantanu Kadam", "font-size: 50px; color: #ff0000;");
       function copyToMyClipboard(content) {
-        // copy a string to clipboard and then log a success message
         var textArea = document.createElement("textarea");
         textArea.value = content;
         document.body.appendChild(textArea);
         textArea.select();
         document.execCommand("copy");
         textArea.remove();
-        alert("Text Copied!");
+        alert("Text copied to clipboard");
       }
     </script>
 
