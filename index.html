@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8" />
+    <title>Shantanu Kadam</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+
+  <body>
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <div class="container hero">
+      <div class="row flex">
+        <div class="one-half column" style="margin-top: 15%">
+          <h4 id="job-title">Advocate</h4>
+          <h1>Shantanu Kadam</h1>
+          <p>
+            Detail-Oriented Lawyer with over 4 years of experience working in corporate law. Specialized in corporate taxes and financial planning, with deep knowledge of evolving government regulations. Highly competent in successful negotiations of substantial corporate contracts. 
+            <br>
+          L.L.B in Business Administration | Johns Hopkins University
+          </p>
+
+          <ul>
+            <li>Graduated Summa Cum Laude in 2017</li>
+            <li>President of the Environmental Law Society 2015-2017</li>
+          </ul>
+          
+        </div>
+      </div>
+      <img
+        id="profilepic"
+        src="images/profilepic.png"
+        alt="Shantanu Kadam Profile Picture"
+      />
+    </div>
+
+    <div class="banner">
+      <button class="nobg" onclick="copyToMyClipboard('+91 7718007891');">
+        <h6>+91 7718007891</h6>
+      </button>
+      <button class="nobg" onclick="copyToMyClipboard('shantanu.kadam12@gmail.com');">
+        <h6>shantanu.kadam@gmail.com</h6>
+      </button>
+       <button class="nobg" onclick="copyToMyClipboard('11/ Sarvamangal society, College Lane, Dadar(West)');">
+        <h6>11/ Sarvamangal society, College Lane, Dadar(West)</h6>
+      </button>
+    </div>
+
+    <hr>
+
+    <div class="container form-wrapper">
+      <form
+        action="https://formsubmit.co/advocate.shantanukadam@gmail.com"
+        method="POST"
+      >
+        <!-- submit form response to . -->
+        <input type="hidden" name="_subject" value="New submission!" />
+        <input type="hidden" name="_cc" value="atharva.rane0511@gmail.com" />
+
+        <!-- send user the copy -->
+        <input
+          type="hidden"
+          name="_autoresponse"
+          value="Thanks for reaching out!"
+        />
+
+        <!-- disable captcha -->
+        <!-- <input type="hidden" name="_captcha" value="false"> -->
+
+        <div class="row">
+          <div class="six columns">
+            <label for="exampleEmailInput">Your email</label>
+            <input
+              class="u-full-width"
+              type="email"
+              name="email"
+              placeholder="mark@mailbox.com"
+              id="exampleEmailInput"
+              required
+            />
+          </div>
+          <div class="six columns">
+            <label for="exampleRecipientInput">Reason for contacting</label>
+            <select class="u-full-width" id="exampleRecipientInput">
+              <option value="legal_advice">Legal Advice</option>
+              <option value="arbitration">Arbitration</option>
+              <option value="quote">Get a quote</option>
+            </select>
+          </div>
+        </div>
+        <label for="exampleMessage">Message</label>
+        <textarea
+          name="message"
+          class="u-full-width"
+          placeholder="Hi Shantanu …"
+          id="exampleMessage"
+          required
+        ></textarea>
+        <label class="example-send-yourself-copy">
+          <input type="checkbox" />
+          <span class="label-body">Send a copy to yourself</span>
+        </label>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://shantanuvk.github.io/"
+        />
+        <input class="button" type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <section>
+      <div class="skewed"></div>
+    </section>
+
+    <footer>
+      
+    </footer>
+
+    <script type="text/javascript">
+      console.log("%cShantanu Kadam", "font-size: 50px; color: #ff0000;");
+      function copyToMyClipboard(content) {
+        // copy a string to clipboard and then log a success message
+        var textArea = document.createElement("textarea");
+        textArea.value = content;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        textArea.remove();
+        alert("Text Copied!");
+      }
+    </script>
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
+</html>
